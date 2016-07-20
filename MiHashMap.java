@@ -80,6 +80,13 @@ public class MiHashMap
         valores.clear();
         claves.clear();
     }
+    
+    /**
+     *  Devuelve true si el mapa contiene la clave dada.
+     */
+    public boolean containsKey(String clave){
+        return claves.contains(clave);
+    }
 }
 
 
