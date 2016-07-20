@@ -72,6 +72,14 @@ public class MiHashMap
         }
         return sol;
     }
+    
+    /**
+     * vacía el mapa.
+     */
+    public void clear(){
+        valores.clear();
+        claves.clear();
+    }
 }
 
 
