@@ -59,6 +59,19 @@ public class MiHashMap
     public int size(){
         return claves.size();
     }
+    
+    /**
+     * elimina del mapa el elemento con la clave dada y devuelve su valor. Si no hay esa clave en el mapa devuelve -1
+     */
+    public int remove(String clave){
+        int sol = -1; //VL para devolver al solución final.
+        if(claves.indexOf(clave) != -1){
+            sol = valores.remove(claves.indexOf(clave));
+            claves.remove(claves.indexOf(clave));
+            
+        }
+        return sol;
+    }
 }
 
 
