@@ -87,7 +87,34 @@ public class MiHashMap
     public boolean containsKey(String clave){
         return claves.contains(clave);
     }
+    
+    /**
+     * Devuelve true si el mapa contiene el valor dado.
+     */
+    public boolean containsValue(int valor){
+        return valores.contains(valor);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
