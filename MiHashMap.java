@@ -53,7 +53,12 @@ public class MiHashMap
         return claves.size() == 0;
     }
     
-    
+    /**
+     * devuelve el número de elementos del mapa.
+     */
+    public int size(){
+        return claves.size();
+    }
 }
 
 
