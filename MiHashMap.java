@@ -40,12 +40,17 @@ public class MiHashMap
      */
     public int get(String clave){
         int sol = -1;//VL para retornar como solución.
-        for(int i = 0; i < claves.size(); i ++){
+        int contador = 0;
             if(claves.contains(clave)){
-                sol = valores.indexOf(i);
+               // contador = claves.indexOf(clave);
+                sol = valores.get(claves.indexOf(clave));
             }
-        }
         return sol;
     }
 }
+
+
+
+
+
 
