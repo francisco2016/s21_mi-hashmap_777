@@ -40,14 +40,50 @@ public class MiHashMap
      */
     public int get(String clave){
         int sol = -1;//VL para retornar como solución.
-        int contador = 0;
-            if(claves.contains(clave)){
-               // contador = claves.indexOf(clave);
-                sol = valores.get(claves.indexOf(clave));
-            }
+        if(claves.contains(clave)){
+            sol = valores.get(claves.indexOf(clave));
+        }
         return sol;
     }
+    
+    /**
+     * devuelve true si el mapa no contiene elementos.
+     */
+    public boolean isEmpty(){
+        return claves.size() == 0;
+    }
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
