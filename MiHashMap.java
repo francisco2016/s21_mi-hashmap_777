@@ -35,9 +35,17 @@ public class MiHashMap
         return conSinClave;
     } 
 
+    /**
+     *Devuelve el valor asociado con la clave especificada o -1 en caso de que la clave no exista.
+     */
+    public int get(String clave){
+        int sol = -1;//VL para retornar como solución.
+        for(int i = 0; i < claves.size(); i ++){
+            if(claves.contains(clave)){
+                sol = valores.indexOf(i);
+            }
+        }
+        return sol;
+    }
 }
-
-
-
-
 

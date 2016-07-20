@@ -96,29 +96,29 @@ public class ArrayListInt
      *no contenga el elemento especificado.
      */
     public int indexOf(int elemento){
-         int cont = 0;
-        boolean encontrado = false;
-        while(cont < array.length && !encontrado)
-        {
-            if (array[cont] == elemento)
-            {
-                encontrado = true;
-            }
-            cont++;
-        }
-        if (!encontrado)
-        {
-            cont = 0;
-        }
-        return cont-1;
-        /////////////////////////////////////////////////////////////////
-        //         int indice = -1;
-        //         for(int i = 0; i < array.length; i ++){
-        //             if(array[i] == elemento){
-        //                 indice = i;
+        //          int cont = 0;
+        //         boolean encontrado = false;
+        //         while(cont < array.length && !encontrado)
+        //         {
+        //             if (array[cont] == elemento)
+        //             {
+        //                 encontrado = true;
         //             }
+        //             cont++;
         //         }
-        //         return indice;
+        //         if (!encontrado)
+        //         {
+        //             cont = 0;
+        //         }
+        //         return cont-1;
+        /////////////////////////////////////////////////////////////////
+        int indice = -1;
+        for(int i = 0; i < array.length; i ++){
+            if(array[i] == elemento){
+                indice = i;
+            }
+        }
+        return indice;
     }
 
     /**
